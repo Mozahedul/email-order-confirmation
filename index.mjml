@@ -426,7 +426,7 @@
     </mj-section>
 
     <!-- Order Items -->
-    <mj-section padding="15px 0px 5px" css-class="dm-bg-section">
+    <mj-section padding="15px 10px 5px" css-class="dm-bg-section">
       <mj-group css-class="mobile-width">
         <!-- Product Image -->
         <mj-column width="20%">
@@ -470,7 +470,7 @@
         </mj-column>
       </mj-group>
     </mj-section>
-    <mj-section padding="5px 0px" css-class="dm-bg-section">
+    <mj-section padding="5px 10px 0px" css-class="dm-bg-section">
       <mj-group css-class="mobile-width">
         <!-- Product Image -->
         <mj-column width="20%">
@@ -529,7 +529,7 @@
     </mj-section>
 
     <!-- Subtotal -->
-    <mj-section padding="0" css-class="dm-bg-section">
+    <mj-section padding="5px 10px" css-class="dm-bg-section">
       <mj-group css-class="mobile-width">
         <mj-column>
           <mj-text font-size="13px" font-weight="500" css-class="dm-text-h">
@@ -548,7 +548,7 @@
         </mj-column>
       </mj-group>
     </mj-section>
-    <mj-section padding="0" css-class="dm-bg-section">
+    <mj-section padding="5px 10px" css-class="dm-bg-section">
       <mj-group css-class="mobile-width">
         <mj-column>
           <mj-text css-class="dm-text-h" font-size="13px" font-weight="500">
@@ -567,7 +567,7 @@
         </mj-column>
       </mj-group>
     </mj-section>
-    <mj-section padding="0" css-class="dm-bg-section">
+    <mj-section padding="5px 10px" css-class="dm-bg-section">
       <mj-group css-class="mobile-width">
         <mj-column>
           <mj-text css-class="dm-text-h" font-size="13px" font-weight="bold">
