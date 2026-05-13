@@ -1,0 +1,22 @@
+{
+  "name": "email-order-confirmation",
+  "version": "1.0.0",
+  "description": "An email template developed for order confirmation",
+  "homepage": "https://github.com/Mozahedul/email-order-confirmation#readme",
+  "bugs": {
+    "url": "https://github.com/Mozahedul/email-order-confirmation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mozahedul/email-order-confirmation.git"
+  },
+  "license": "MIT",
+  "author": "Mozahedul Islam",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mjml index.mjml -o index.html",
+    "watch": "nodemon --ext mjml --exec \"npm run build\""
+  }
+}
