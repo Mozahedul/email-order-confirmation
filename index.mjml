@@ -592,6 +592,7 @@
     <mj-section padding="15px 0px" css-class="dm-bg-section">
       <mj-column>
         <mj-button
+          href="https://taqwaitagency.com/"
           line-height="1.1"
           font-size="12px"
           background-color="#0d3d2e"
