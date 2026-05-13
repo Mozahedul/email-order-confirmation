@@ -13,8 +13,8 @@
 
     <!-- Google Font -->
     <mj-font
-      name="Lora"
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      name="Roboto"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     />
 
     <!--
@@ -61,7 +61,7 @@
     <mj-attributes>
       <!-- Entire Email -->
       <mj-all
-        font-family="'Lora', Georgia, 'Times New Roman', Arial, serif"
+        font-family="'Roboto', Georgia, 'Times New Roman', Arial, serif"
         color="#444444"
         line-height="1.5"
       />
@@ -122,6 +122,11 @@
       p {
         margin: 0;
         padding: 0;
+      }
+
+      .mobile-width {
+        max-width: 380px !important;
+        width: 100% !important;
       }
     </mj-style>
 
@@ -302,5 +307,423 @@
   </mj-head>
 
   <mj-body width="600px" background-color="#f4f4f4" css-class="dm-bg-outer">
+    <!-- ============================================================ -->
+    <!-- LOGO                                                          -->
+    <!-- ============================================================ -->
+    <mj-section background-color="#ffffff" css-class="dm-bg-section">
+      <mj-column vertical-align="top">
+        <mj-image
+          fluid-on-mobile="false"
+          src="https://res.cloudinary.com/ducp0w6mx/image/upload/v1778661679/email-portfolio/email-order-confirmation/images/urban-threads-logo_efltmd.png"
+          alt="Ultimate Technology Limited"
+          href="https://mjml.io/product?utm_source=email&utm_medium=newsletter&utm_campaign=summer_sale"
+          padding="16px 0"
+          width="180px"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#0a3024" padding="30px 0">
+      <mj-column>
+        <mj-image
+          fluid-on-mobile="false"
+          src="https://res.cloudinary.com/ducp0w6mx/image/upload/v1778664470/email-portfolio/email-order-confirmation/icons/circle-check_c4scym.png"
+          alt=""
+          width="50px"
+        />
+        <mj-text
+          align="center"
+          color="#ffffff"
+          font-size="36px"
+          padding="15px 0 0"
+          line-height="1.2"
+          font-weight="bold"
+        >
+          Thank you <br />
+          for your order!
+        </mj-text>
+
+        <mj-text
+          align="center"
+          padding="16px 0px 0px"
+          line-height="1.4"
+          font-size="16px"
+          color="#f5f5f5"
+        >
+          We have received your order and <br />
+          it's now being processed.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!--
+    mj spacer
+    For creating horizontal space between sections
+    -->
+    <mj-section css-class="dm-bg-section">
+      <mj-column>
+        <mj-spacer height="20px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Order details -->
+    <mj-section css-class="dm-bg-section">
+      <mj-column padding="0 30px">
+        <mj-text
+          css-class="dm-text-h"
+          font-size="12px"
+          font-weight="500"
+          align="center"
+        >
+          <span style="width: 120px; display: inline-block; padding: 4px 0"
+            >Order No:
+          </span>
+          <span style="width: 120px; display: inline-block; padding: 4px 0"
+            >#DH3456789</span
+          ><br />
+          <span style="width: 120px; display: inline-block; padding: 4px 0"
+            >Order Date:
+          </span>
+          <span style="width: 120px; display: inline-block; padding: 4px 0"
+            >#DH3456789</span
+          ><br />
+          <span style="width: 120px; display: inline-block; padding: 4px 0"
+            >Payment Method:
+          </span>
+          <span style="width: 120px; display: inline-block; padding: 4px 0"
+            >Credit Card</span
+          >
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- MJ Border / divider -->
+    <mj-section padding="0 30px" css-class="dm-bg-section">
+      <mj-column>
+        <mj-divider
+          border-style="solid"
+          border-color="#e8e8e8"
+          border-width="1px"
+          width="100%"
+          align="left"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Order Summary Title -->
+    <mj-section css-class="dm-bg-section">
+      <mj-column>
+        <mj-text
+          css-class="dm-text-h"
+          font-weight="bold"
+          align="center"
+          font-size="15px"
+          color="#666666"
+          text-transform="uppercase"
+        >
+          Order Summary
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Order Items -->
+    <mj-section padding="15px 0px 5px" css-class="dm-bg-section">
+      <mj-group css-class="mobile-width">
+        <!-- Product Image -->
+        <mj-column width="20%">
+          <mj-image
+            padding="0"
+            fluid-on-mobile="false"
+            src="https://res.cloudinary.com/ducp0w6mx/image/upload/v1778660029/email-portfolio/email-order-confirmation/images/1_jxpkkl.png"
+            alt="Denim Jacket for Women"
+            width="70px"
+            align="left"
+          />
+        </mj-column>
+
+        <!-- Product Info -->
+        <mj-column width="55%">
+          <mj-text
+            css-class="dm-text-h"
+            padding="5px 10px"
+            font-size="12px"
+            font-weight="600"
+            color="#444444"
+            line-height="1.4"
+          >
+            Denim Jacket for Women<br />
+            Qty: 1 X 89.99
+          </mj-text>
+        </mj-column>
+
+        <!-- Price -->
+        <mj-column width="25%">
+          <mj-text
+            css-class="dm-text-h"
+            align="right"
+            padding="5px 0"
+            font-size="13px"
+            font-weight="bold"
+            color="#111111"
+          >
+            $89.99
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="5px 0px" css-class="dm-bg-section">
+      <mj-group css-class="mobile-width">
+        <!-- Product Image -->
+        <mj-column width="20%">
+          <mj-image
+            padding="0"
+            fluid-on-mobile="false"
+            src="https://res.cloudinary.com/ducp0w6mx/image/upload/v1778660035/email-portfolio/email-order-confirmation/images/2_ajrwwi.png"
+            alt="Canvas backpack"
+            width="70px"
+            align="left"
+          />
+        </mj-column>
+
+        <!-- Product Info -->
+        <mj-column width="55%">
+          <mj-text
+            css-class="dm-text-h"
+            padding="5px 10px"
+            font-size="12px"
+            font-weight="600"
+            color="#444444"
+            line-height="1.4"
+          >
+            Canvas backpack<br />
+            Qty: 2 X 26.25
+          </mj-text>
+        </mj-column>
+
+        <!-- Price -->
+        <mj-column width="25%">
+          <mj-text
+            css-class="dm-text-h"
+            align="right"
+            padding="5px 0"
+            font-size="13px"
+            font-weight="bold"
+            color="#111111"
+          >
+            $54.50
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <!-- MJ Border / divider -->
+    <mj-section padding="0 30px" css-class="dm-bg-section">
+      <mj-column>
+        <mj-divider
+          border-style="solid"
+          border-color="#e8e8e8"
+          border-width="1px"
+          width="100%"
+          align="left"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Subtotal -->
+    <mj-section padding="0" css-class="dm-bg-section">
+      <mj-group css-class="mobile-width">
+        <mj-column>
+          <mj-text font-size="13px" font-weight="500" css-class="dm-text-h">
+            Subtotal:
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text
+            css-class="dm-text-h"
+            align="right"
+            font-size="13px"
+            font-weight="500"
+          >
+            $144.49
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="0" css-class="dm-bg-section">
+      <mj-group css-class="mobile-width">
+        <mj-column>
+          <mj-text css-class="dm-text-h" font-size="13px" font-weight="500">
+            Shipping:
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text
+            css-class="dm-text-h"
+            align="right"
+            font-size="13px"
+            font-weight="500"
+          >
+            $0.00
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <mj-section padding="0" css-class="dm-bg-section">
+      <mj-group css-class="mobile-width">
+        <mj-column>
+          <mj-text css-class="dm-text-h" font-size="13px" font-weight="bold">
+            Total:
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text
+            css-class="dm-text-h"
+            align="right"
+            font-size="14px"
+            font-weight="bold"
+            color="#154734"
+          >
+            $0.00
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <!-- View Order Button  -->
+    <mj-section padding="15px 0px" css-class="dm-bg-section">
+      <mj-column>
+        <mj-button
+          line-height="1.1"
+          font-size="12px"
+          background-color="#0d3d2e"
+        >
+          View Order
+        </mj-button>
+        <mj-text
+          css-class="dm-text-h"
+          font-size="13px"
+          align="center"
+          font-weight="400"
+          padding="10px 0px 0px"
+          color="#666666"
+        >
+          We will notify you once your order ships.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- 3 COLUMN ICONS SECTION -->
+    <mj-section
+      padding="30px 0px"
+      background-color="#f3f8f4"
+      css-class="dm-bg-section-soft"
+    >
+      <mj-column padding="0 10px 20px">
+        <mj-image
+          fluid-on-mobile="false"
+          src="https://res.cloudinary.com/ducp0w6mx/image/upload/v1778584464/email-portfolio/luxeora/icons/truck_obd6bo.png"
+          alt="Shopping for women"
+          width="50px"
+          padding="0px"
+        />
+        <!-- article heading: #111111 -->
+        <mj-text
+          css-class="dm-text-h"
+          font-size="13px"
+          font-weight="bold"
+          color="#111111"
+          padding="10px 0 5px"
+          align="center"
+          text-transform="uppercase"
+        >
+          Free shipping
+        </mj-text>
+        <!-- article body: #666666 -->
+        <mj-text
+          css-class="dm-text-body"
+          font-size="12px"
+          line-height="1.4"
+          color="#666666"
+          align="center"
+        >
+          <span
+            href="https://mjml.io/women"
+            style="color: #444444; text-decoration: none; font-weight: 500"
+            >On orders over $75</span
+          >
+        </mj-text>
+      </mj-column>
+
+      <mj-column padding="0px 10px 20px">
+        <mj-image
+          fluid-on-mobile="false"
+          src="https://res.cloudinary.com/ducp0w6mx/image/upload/v1778584791/email-portfolio/luxeora/icons/box_fv661s.png"
+          alt="Shopping for men"
+          width="50px"
+          padding="0"
+        />
+        <!-- article heading: #111111 -->
+        <mj-text
+          css-class="dm-text-h"
+          font-size="13px"
+          font-weight="bold"
+          color="#111111"
+          padding="10px 0 5px"
+          align="center"
+          text-transform="uppercase"
+        >
+          Easy Returns
+        </mj-text>
+        <!-- article body: #666666 -->
+        <mj-text
+          css-class="dm-text-body"
+          font-size="12px"
+          line-height="1.4"
+          color="#666666"
+          align="center"
+        >
+          <span
+            href="https://mjml.io/women"
+            style="color: #444444; text-decoration: none; font-weight: 500"
+            >30 days return</span
+          >
+        </mj-text>
+      </mj-column>
+      <mj-column padding="0 10px">
+        <mj-image
+          fluid-on-mobile="false"
+          src="https://res.cloudinary.com/ducp0w6mx/image/upload/v1778584791/email-portfolio/luxeora/icons/lock_qik6gg.png"
+          alt="Shopping for men"
+          width="50px"
+          padding="0"
+        />
+        <!-- article heading: #111111 -->
+        <mj-text
+          css-class="dm-text-h"
+          font-size="13px"
+          font-weight="bold"
+          color="#111111"
+          padding="10px 0 5px"
+          align="center"
+          text-transform="uppercase"
+          line-height="1.4"
+        >
+          Secure Payment
+        </mj-text>
+        <!-- article body: #666666 -->
+        <mj-text
+          css-class="dm-text-body"
+          font-size="12px"
+          line-height="1.4"
+          color="#666666"
+          align="center"
+        >
+          <span
+            href="https://mjml.io/women"
+            style="color: #444444; text-decoration: none; font-weight: 500"
+            >100% Safe</span
+          >
+        </mj-text>
+      </mj-column>
+    </mj-section>
   </mj-body>
 </mjml>
